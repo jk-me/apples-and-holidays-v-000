@@ -75,6 +75,7 @@ def all_holidays_with_bbq(holiday_hash)
     hhash.each{ |holiday,suparray|
     if suparray.include?('BBQ')
       a << holiday
+    end
     }
   } 
   a
