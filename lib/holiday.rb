@@ -63,7 +63,7 @@ def all_supplies_in_holidays(holiday_hash)
     puts "#{season.to_s.capitalize}:"
     hhash.each{ |holiday,suparray|
       n=holiday.to_s.split('_')
-      n.each{|x| x.capitalize}
+      n=n.collect{|x| x.capitalize}
       n=n.join(' ')
       puts "  #{n}: #{suparray.join(', ')}"
       }
